@@ -11,5 +11,5 @@ if [[ $numfiles -eq 0 ]]; then
   exit 1
 fi
 echo Creating minimum-size tar.gz file named gmtsar_output.zip containing $numfiles geocoded interferograms and metadata.
-tar -cvzf gmtsar_output.zip topo/master.PRM raw/baseline_table.dat raw/data.in intf.in intf/*/unwrap_mask_ll_pad.grd 
+tar -cvzf gmtsar_output.tar.gz topo/master.PRM raw/baseline_table.dat raw/data.in intf.in intf/*/unwrap_mask_ll_pad.grd 
 
