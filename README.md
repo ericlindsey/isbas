@@ -4,6 +4,6 @@ This code implements the Intermittent SBAS method described by [Sowter et al. (2
 
 Basic usage: 
 
-1. Run `intf_pad.sh` - this makes sure all images have the same exterior bounds by paddin them with NaN values.
+1. Run `intf_pad.sh` - this makes sure all images have the same exterior bounds by padding them with NaN values.
 2. Set your parameters in the config file - see the example
 3. Run `python isbas.py isbas.config`.
