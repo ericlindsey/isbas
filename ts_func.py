@@ -38,11 +38,8 @@ def get_igram_ids(sat,fname,ids):
         istart=12
         iend=17
     elif sat=='S1':
-        istart=3
-        iend=11
-        #use only the date part of the id
-        for i in range(len(ids)):
-            ids[i]=ids[i][15:23]
+        istart=0
+        iend=18
     else:
         print('Error: satellite %s not yet implemented. Edit the code to provide location of ID number in granule name.'%sat)
         sys.exit(1)
